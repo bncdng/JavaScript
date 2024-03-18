@@ -1,5 +1,7 @@
+// First Task
 console.log("B" + "i" + "a" + "n" + "c" + "a");
 
+//Second Task
 // Error! Make it work
 console.log("Hallo");
 
@@ -17,3 +19,8 @@ console.log((600 + 510) / 2);
 
 // Wrong result: Expected a Number 4 received 22
 console.log(2 + 2);
+
+// Third Task
+// Create a console.log that returns true when both division results are equal to 5
+console.log(25 / 5 === 5); // Result: 5
+console.log(50 / 10 === 5); // Result: 5
