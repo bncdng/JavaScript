@@ -35,7 +35,7 @@ console.log(getUserNameLength(userName) > 4);
  */
 const isString = function (data) {
   return typeof data === "string";
-};
+}
 
 console.log(isString("Hello"));
 // result should be true
