@@ -7,14 +7,16 @@
 // Allowed are only positive numbers, add a check.
 
 function oddNumbers(num1, num2) {
-  const oddNum = [];
-
+  const oddNum = []; // Initialize an empty array to store odd numbers
+  // Iterate through each number from num1 to num2
   for (let i = num1; i <= num2; i++) {
+    // Check if the current number is odd
     if (i % 2 != 0) {
+      // If the number is odd, add it to the oddNum array
       oddNum.push(i);
     }
   }
-
+  // Join the odd numbers into a comma-separated string and return it
   return oddNum.join(",");
 }
 
