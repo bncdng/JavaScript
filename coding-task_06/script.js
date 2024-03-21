@@ -6,28 +6,42 @@
 // Store all oddNumbers in string, seperated by a comma and return the string.
 // Allowed are only positive numbers, add a check.
 
+//******************** Meine Funktion ******************************
+// function oddNumbers(num1, num2) {
+//   const oddNum = []; // Initialize an empty array to store odd numbers
+//   // Iterate through each number from num1 to num2
+//   for (let i = num1; i <= num2; i++) {
+//     // Check if the current number is odd
+//     if (i % 2 != 0) {
+//       // If the number is odd, add it to the oddNum array
+//       oddNum.push(i);
+//     }
+//   }
+//   // Join the odd numbers into a comma-separated string and return it
+//   return oddNum.join(",");
+// }
+
+// console.log(oddNumbers(0, 4));
+// // result should be: 1,3
+
+// console.log(oddNumbers(10, 33));
+// // result should be: 11,13,15,17,19,21,23,25,27,29,31,33
+
+// console.log(oddNumbers(9, 12));
+// // result should be: 9,11
+
+//****************** Gemeinsame Funktion ********************************
+
 function oddNumbers(num1, num2) {
-  const oddNum = []; // Initialize an empty array to store odd numbers
-  // Iterate through each number from num1 to num2
-  for (let i = num1; i <= num2; i++) {
-    // Check if the current number is odd
-    if (i % 2 != 0) {
-      // If the number is odd, add it to the oddNum array
-      oddNum.push(i);
+  let result = "";
+  for (let i = num1; i < num2; i++) {
+    if (i % 2 !== 0) {
+      result += i + ",";
     }
   }
-  // Join the odd numbers into a comma-separated string and return it
-  return oddNum.join(",");
+  console.log(num1, num2);
+  return result;
 }
-
-console.log(oddNumbers(0, 4));
-// result should be: 1,3
-
-console.log(oddNumbers(10, 33));
-// result should be: 11,13,15,17,19,21,23,25,27,29,31,33
-
-console.log(oddNumbers(9, 12));
-// result should be: 9,11
 
 //**************************************************
 // TODO: Implement the charCount function
